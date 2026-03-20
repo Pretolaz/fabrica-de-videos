@@ -14,7 +14,7 @@ import {
 	Marker,
 } from 'react-simple-maps';
 
-const geoUrl = 'https://unpkg.com/world-atlas@2.0.2/countries-110m.json';
+const geoUrl = '/countries-110m.json';
 
 const LA: [number, number] = [-118.2437, 34.0522];
 const NY: [number, number] = [-74.006, 40.7128];

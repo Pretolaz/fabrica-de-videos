@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "render": "remotion render TripAnimation out/video.mp4",
     "start": "remotion studio",
     "build": "remotion render src/index.tsx MyComposition out/video.mp4"
   },
