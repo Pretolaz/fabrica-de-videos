@@ -2,5 +2,5 @@ import {Config} from '@remotion/cli/config';
 
 Config.setVideoImageFormat('jpeg');
 Config.setCodec('h264');
-Config.setConcurrency(8);
-Config.setEntryPoint('./src/index.tsx');
+Config.setConcurrency(4);
+Config.setEntryPoint("src/index.tsx");
