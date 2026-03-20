@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Pretolaz/fabrica-de-videos/issues"
   },
-  "homepage": "https://github.com/Pretolaz/fabrica-de-videos#readme"
+  "homepage": "https://github.com/Pretolaz/fabrica-de-videos#readme",
+  "devDependencies": {
+    "@remotion/mcp": "^4.0.438"
+  }
 }
