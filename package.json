@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "render": "remotion render TripAnimation out/video.mp4",
-    "start": "remotion studio",
-    "build": "remotion render src/index.tsx MyComposition out/video.mp4"
+    "render": "npx remotion render TripAnimation out/video.mp4",
+    "start": "npx remotion studio",
+    "build": "npx remotion render src/index.tsx MyComposition out/video.mp4"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,20 @@
     "url": "https://github.com/Pretolaz/fabrica-de-videos/issues"
   },
   "homepage": "https://github.com/Pretolaz/fabrica-de-videos#readme",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.244",
+    "@remotion/cli": "4.0.244",
+    "@remotion/player": "4.0.244",
+    "@remotion/renderer": "4.0.244",
+    "@remotion/composer": "4.0.244",
+    "@remotion/three": "4.0.244",
+    "three": "^0.164.1",
+    "react-simple-maps": "^3.0.0",
+    "topojson-client": "^3.1.0",
+    "lucide-react": "^0.381.0"
+  },
   "devDependencies": {
     "@remotion/mcp": "^4.0.438"
   }
