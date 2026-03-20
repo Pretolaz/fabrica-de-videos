@@ -2,7 +2,7 @@ import React, {Suspense} from 'react';
 import {AbsoluteFill, useCurrentFrame, useVideoConfig, interpolate, spring} from 'remotion';
 import {ThreeCanvas} from '@remotion/three';
 
-const EiffelModel: React.FC<{rotation: [number, number, number], scale: number}> = ({rotation, scale}) => {
+const EiffelModel: React.FC<{rotation: [number, number, number], scale: number, frame: number}> = ({rotation, scale, frame}) => {
     // Definimos uma estrutura 3D simples caso o carregamento do modelo falhe ou demore demais.
     // O usuário verá uma representação estilizada "low-poly" da torre.
     
@@ -93,7 +93,7 @@ export const EiffelTower3D: React.FC = () => {
                 <ThreeCanvas width={width} height={height} style={{background: 'transparent'}}>
                     <ambientLight intensity={0.6} />
                     <spotLight position={[10, 20, 10]} angle={0.15} penumbra={1} intensity={2} color="#ffffff" />
-                    <EiffelModel rotation={[0, rotationY, 0]} scale={towerScale} />
+                    <EiffelModel rotation={[0, rotationY, 0]} scale={towerScale} frame={frame} />
                 </ThreeCanvas>
             </Suspense>
 

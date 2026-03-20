@@ -5,6 +5,7 @@ import {
 	spring,
 	useCurrentFrame,
 	useVideoConfig,
+    staticFile,
 } from 'remotion';
 import {
 	ComposableMap,
